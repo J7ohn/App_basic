@@ -10380,3 +10380,5 @@ venv_kv/share/sdl2/bin/optional/LICENSE.opus.txt
 venv_kv/share/sdl2/bin/optional/LICENSE.opusfile.txt
 venv_kv/share/sdl2/bin/optional/LICENSE.tiff.txt
 venv_kv/share/sdl2/bin/optional/LICENSE.webp.txt
+__pycache__/botoes.cpython-311.pyc
+__pycache__/telas.cpython-311.pyc
