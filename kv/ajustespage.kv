@@ -1,0 +1,71 @@
+<AjustesPage>:
+
+    FloatLayout:
+        canvas: 
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source:"AplicativoVendas/icones/bg1.png"
+
+        Label:
+            pos_hint: {"right":0.85, "top":0.95}
+            size_hint: 0.7, 0.2
+            bold: True
+            text: "Seu ID: 1"
+            id: id_vendedor
+
+
+        # Mudar foto de perfil
+        ImageButton:
+            pos_hint: {"right":0.5, "top":0.7}
+            size_hint: 0.5, 0.15
+            source: "AplicativoVendas/icones/foto_perfil.png"
+            on_release: print("Ir para tela") 
+        LabelButton:
+            pos_hint: {"right":0.9, "top":0.7}
+            size_hint: 0.5, 0.15
+            text: "Mudar foto de Perfil"
+            on_release: print("Ir para tela")
+
+
+        # Adicionar vendedor
+        ImageButton:
+            pos_hint: {"right":0.5, "top":0.5}
+            size_hint: 0.5, 0.15
+            source: "AplicativoVendas/icones/adicionar_vendedor.png"
+            on_release: print("Ir para tela") 
+        LabelButton:
+            pos_hint: {"right":0.9, "top":0.5}
+            size_hint: 0.5, 0.15
+            text: "Adicionar Vendedor"
+            on_release: print("Ir para tela")
+
+
+        # Ver todas as vedas
+        ImageButton:
+            pos_hint: {"right":0.5, "top":0.3}
+            size_hint: 0.5, 0.15
+            source: "AplicativoVendas/icones/vendas_empresa.png"
+            on_release: print("Ir para tela") 
+        LabelButton:
+            pos_hint: {"right":0.9, "top":0.3}
+            size_hint: 0.5, 0.15
+            text: "Ver todas as Vendas"
+            on_release: print("Ir para tela")
+
+
+        # Botao de voltar
+        FloatLayout:
+            pos_hint: {"right":1, "top":0.1}
+            size_hint: 1, 0.1
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("#006D7E")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                pos_hint: {"right":0.2, "top":0.9}
+                size_hint: 0.2, 0.8
+                source: "AplicativoVendas/icones/voltar.png"
+                on_release: app.mudar_tela("homepage")
