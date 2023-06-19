@@ -1,5 +1,6 @@
 <AjustesPage>:
 
+    # Fundo do layout
     FloatLayout:
         canvas: 
             Rectangle:
@@ -7,14 +8,14 @@
                 pos: self.pos
                 source:"icones/bg1.png"
 
-        # Texto de ID
+
+        # Texto de ID da tela de ajustes
         Label:
             canvas.before:
                 Rectangle:
                     pos: self.pos
                     size: self.size
                     source: "icones/botao_fino.png"
-
             pos_hint: {"right":0.85, "top":0.95}
             size_hint: 0.7, 0.2
             bold: True
