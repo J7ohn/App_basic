@@ -1,5 +1,10 @@
 #:include kv/homepage.kv
 #:include kv/ajustespage.kv
+#:include kv/adicionarvendedorpage.kv
+#:include kv/adicionarvendaspage.kv
+#:include kv/fotoperfilpage.kv
+#:include kv/listarvendedorespage.kv
+#:include kv/todas_vendas_page.kv
 #:import utils kivy.utils
 
 FloatLayout: 
@@ -20,10 +25,32 @@ FloatLayout:
         size_hint: 1, 0.7
         id: screen_manager
 
+
         HomePage: 
             name: "homepage"
             id: homepage
 
+
         AjustesPage:
             name: "ajustespage"
             id: ajustespage
+
+        AdicionarVendasPage:
+            name: "adicionarvendaspage"
+            id: adicionarvendaspage
+
+        AdicionarVendedorPage:
+            name: "adicionarvendedorpage"
+            id: adicionarvendedorpage
+
+        FotoPerfilPage:
+            name: "fotoperfilpage"
+            id: fotoperfilpage
+
+        ListarVendedoresPage:
+            name: "listarvendedorespage"
+            id: listarvendedorespage
+
+        TodasVendasPage:
+            name: "todasvendaspage"
+            id: todasvendaspage
