@@ -12,9 +12,25 @@
         # Texto de ID da tela de ajustes
         Label:
             pos_hint: {"right":0.85, "top":0.95}
-            size_hint: 0.7, 0.2
+            size_hint: 0.7, 0.1
             bold: True
-            text: "Foto de perfil page"
+            text: "Selecione sua Foto de Perfil"
+
+
+        #Lista/scroll de imagens
+        ScrollView:
+            pos_hint: {"right": 0.9, "top": 0.85}
+            size_hint: 0.8, 0.73
+
+            GridLayout:
+                cols: 3
+
+                size_hint_y: None
+                spacing: 5, 5
+                height: self.minimum_height
+                row_default_height: "90dp"
+                row_force_default: True
+                id: lista_fotos_perfil
 
 
         # Botao de voltar
