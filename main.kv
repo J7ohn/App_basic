@@ -5,6 +5,7 @@
 #:include kv/fotoperfilpage.kv
 #:include kv/listarvendedorespage.kv
 #:include kv/todas_vendas_page.kv
+#:include kv/loginpage.kv
 #:import utils kivy.utils
 
 FloatLayout: 
@@ -26,6 +27,9 @@ FloatLayout:
         size_hint: 1, 0.7
         id: screen_manager
 
+        LoginPage:
+            name: "loginpage"
+            id: loginpage
 
         HomePage: 
             name: "homepage"

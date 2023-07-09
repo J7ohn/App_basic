@@ -73,11 +73,11 @@ class MainApp(App):
         foto_perfil.source = f"icones/fotos_perfil/{foto}"
 
         info = f'{{"avatar": "{foto}"}}'
-        requisicao = requests.patch(
+        requests.patch(
             f"https://app-basic-12d09-default-rtdb.firebaseio.com/{self.id_usuario}.json",
             data=info
         )
-        
 
+        self.mudar_tela('ajustespage')
 
 MainApp().run()
